@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <audio class="audioPleer" src=""></audio>
+    <div class="link_main">
+        <a class="link_item"
+            href="https://portal.rendez-vous.ru/download_file.html?file_id=6521694805246760921&x=1">Скачать
+            произношение марок в PDF-формате</a>
+    </div>
+    <div class="filter-bar">
+        <div class="filter-bar__letter">
+            <ul class="filter-bar__letter-list">
+                <!-- Рендер фильтра по буквам -->
+            </ul>
+        </div>
+        <h4 class="filter-bar__title">Сортировать:</h4>
+
+        <div class="filter-bar__button-container">
+            <div class="filter-bar__country">
+                <button class="filter-bar__button-check filter-bar__button-check-country">По стране &#9660;</button>
+                <div class="filter-bar__drop-down-panel ">
+                    <ul class="filter-bar__drop-down-list filter-bar__drop-down-list_country">
+                        <!-- Рендер списка стран по данным из JSON -->
+                    </ul>
+                </div>
+            </div>
+            <div class="filter-bar__gamma">
+                <button class="filter-bar__button-check filter-bar__button-check-gamma">По гамме &#9660;</button>
+                <div class="filter-bar__drop-down-panel ">
+                    <ul class="filter-bar__drop-down-list filter-bar__drop-down-list_gamma">
+                        <!-- Рендер гамм по данным из JSON -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cardContainer">
+        <ul class="cardList">
+            <!-- Карточки -->
+        </ul>
+    </div>
+
+    <!-- тэмплейты -->
+
+    <template id="templateCardId" class="templateCard" style="display:none">
+        <li class="card">
+            <h2 class="card__title">Название бренда</h2>
+            <p class="card__transcription">Произношение на русском:</p>
+            <button class="card__play-button"> Произношение бренда <span class="card__play-icon">&#9658;</span></button>
+            <p class="card__gamma">Гамма:</p>
+            <p class="card__gamma-value">Определение гаммы</p>
+            <p class="card__country">Страна:</p>
+            <p class="card__country-value">Определение страны</p>
+        </li>
+    </template>
+
+    <template id="templateLetterId" class="templateLetter" style="display:none">
+        <li class="filter-bar__letter-item">
+            <button class="filter-bar__button">test</button>
+        </li>
+    </template>
+
+    <template class="templateCountry" style="display:none">
+        <li class="filter-bar__drop-down-item">test</li>
+    </template>
+
+    <template class="templateGamma" style="display:none">
+        <li class="filter-bar__drop-down-item">тест гамма</li>
+    </template>
+
+
+
+    <!-- JS -->
+
+</body>
+
+</html>
